@@ -14,6 +14,7 @@
         <module>conference-service</module>
         <module>conference-web</module>
         <module>conference-test</module>
+        <module>conference-ear</module>
     </modules>
 
     <dependencies>
@@ -69,6 +70,12 @@
                     <version>2.4</version>
                     <configuration>
                         <failOnMissingWebXml>false</failOnMissingWebXml>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-ear-plugin</artifactId>
+                    <version>2.9.1</version>
+                    <configuration>
                     </configuration>
                 </plugin>
             </plugins>

@@ -6,6 +6,8 @@ import java.util.List;
 
 @Local
 @Path("/conferences")
+@Consumes("application/json")
+@Produces("application/json")
 public interface ConferenceService {
 
     @POST
@@ -20,14 +22,14 @@ public interface ConferenceService {
 
     @GET
     @Path("name/{name}")
-    public Conference readByName(String name);
+    public Conference readByName(@PathParam("name") String name);
 
     @PUT
     @Path("{id}")
-    public void update(String id, Conference conf);
+    public void update(@PathParam("id") String id, Conference conf);
 
     @DELETE
     @Path("{id}")
-    public void delete(String id);
+    public void delete(@PathParam("id") String id);
 
 }

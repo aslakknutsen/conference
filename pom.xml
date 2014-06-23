@@ -77,6 +77,8 @@
                     <artifactId>maven-ear-plugin</artifactId>
                     <version>2.9.1</version>
                     <configuration>
+                        <fileNameMapping>no-version</fileNameMapping>
+                        <includeLibInApplicationXml>true</includeLibInApplicationXml>
                     </configuration>
                 </plugin>
             </plugins>

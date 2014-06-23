@@ -20,7 +20,7 @@ import java.text.ParseException;
 import java.util.List;
 
 @RunWith(Arquillian.class)
-public class ConferenceServiceTest {
+public class CopyOfConferenceServiceTest {
 
     @Inject
     private Logger log;

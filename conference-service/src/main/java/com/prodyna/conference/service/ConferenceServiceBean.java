@@ -2,7 +2,6 @@ package com.prodyna.conference.service;
 
 import com.prodyna.conference.Conference;
 import com.prodyna.conference.ConferenceService;
-import com.prodyna.conference.common.monitoring.Monitored;
 import org.slf4j.Logger;
 
 import javax.ejb.Stateless;
@@ -11,7 +10,7 @@ import javax.persistence.EntityManager;
 import javax.ws.rs.*;
 import java.util.List;
 
-@Monitored
+// @Monitored
 @Stateless
 public class ConferenceServiceBean implements ConferenceService {
 

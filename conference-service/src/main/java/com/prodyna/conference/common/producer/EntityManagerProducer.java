@@ -7,7 +7,7 @@ import javax.enterprise.inject.Produces;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-@Monitored
+// @Monitored
 public class EntityManagerProducer {
 
     @PersistenceContext

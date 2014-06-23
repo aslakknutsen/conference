@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 @Monitored
 @Stateless
@@ -14,7 +15,7 @@ public class DatabaseCleaner {
     @Inject
     private Logger log;
 
-    @Inject
+    @PersistenceContext
     private EntityManager entityManager;
 
     public void deleteAllConferences() {

@@ -24,7 +24,7 @@ public class ConferenceServiceBean implements ConferenceService {
     @Override
     @POST
     public Conference create(Conference conf) {
-        // em.persist(conf);
+        em.persist(conf);
         return conf;
     }
 

@@ -1,12 +1,13 @@
 package com.prodyna.conference.common.producer;
 
-import javax.ejb.Stateless;
+import com.prodyna.conference.common.monitoring.Monitored;
+
 import javax.enterprise.context.RequestScoped;
 import javax.enterprise.inject.Produces;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-@Stateless
+@Monitored
 public class EntityManagerProducer {
 
     @PersistenceContext

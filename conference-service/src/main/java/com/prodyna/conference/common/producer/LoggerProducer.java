@@ -3,9 +3,11 @@ package com.prodyna.conference.common.producer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.enterprise.context.RequestScoped;
 import javax.enterprise.inject.Produces;
 import javax.enterprise.inject.spi.InjectionPoint;
 
+@RequestScoped
 public class LoggerProducer {
 
     @Produces

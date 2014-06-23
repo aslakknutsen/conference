@@ -28,10 +28,8 @@ public class ConferenceServiceTest {
     @Inject
     private ConferenceService conferenceService;
 
-    /*
     @Inject
     private DatabaseCleaner databaseCleaner;
-    */
 
     @Inject
     private DateFormatter dateFormatter;
@@ -46,13 +44,11 @@ public class ConferenceServiceTest {
         return war;
     }
 
-    /*
     @Test
     @InSequence(1)
     public void deleteAllConferences() {
         databaseCleaner.deleteAllConferences();
     }
-    */
 
     @Test
     @InSequence(2)
